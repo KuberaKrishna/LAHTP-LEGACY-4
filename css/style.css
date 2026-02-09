@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::selection{
+    color: lch(0% 0 0);
+    background-color: lch(100% 0.01 296.81);
+}
+::-moz-selection {
+    background-color: lch(100% 0.01 296.81);
+    color: lch(0% 0 0);
+}
+a{
+    text-decoration: none;
+    color: lch(100% 0.01 296.81);;
+}
+ul{
+    list-style: none;
+}
+body{
+    background-color: lch(11.76% 0 296.81);
+    color: lch(100% 0.01 296.81);
+    font-family: "Jersey 10", sans-serif;
+    letter-spacing: 1px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 350px;
+    height: 270px;
+    gap: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.c-companyLogo{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+.companyLogo{
+    width: 70px;
+    box-shadow: 0px 0px 10px 3px #E0E0E0;
+}
+form p{
+    font-size: 18px;
+}
+input{
+    width: 100%;
+    padding: 4px;
+    outline: none;
+    border: 1px solid transparent;
+}
+form label{
+    font-size: 18px;
+}
+.btn{
+    cursor: pointer;    
+    color: lch(100% 0.01 296.81);
+    background-color: lch(0% 0 0);
+    border: none;
+    transition: all .4s ease;
+    margin-top: 10px;
+    padding: 7px;
+}
+.btn:hover{
+    background-color: lch(100% 0.01 296.81);
+    color: lch(0% 0 0);
+}
+footer{
+    background-color: #0d1117;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+footer ul{
+    height: 100%;
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    align-items: center;
+}
+footer ul a:hover{
+    text-decoration: underline;
+    color: lch(44.01% 0.01 296.81);
+}
