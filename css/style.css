@@ -4,13 +4,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-::selection{
-    color: lch(0% 0 0);
+::selection, ::-moz-selection{
     background-color: lch(100% 0.01 296.81);
+    color: lch(0% 0 0);
 }
-::-moz-selection {
-    background-color: lch(100% 0.01 296.81);
-    color: lch(0% 0 0);
+input::-moz-selection , input::selection{
+    color: lch(100% 0.01 296.81);
+    background-color: lch(0% 0 0);
 }
 a{
     text-decoration: none;
