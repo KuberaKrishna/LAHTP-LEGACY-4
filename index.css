@@ -29,7 +29,7 @@ body{
     color: lch(100% 0.01 296.81);;
     font-family: 'Electrolize', sans-serif;
 }
-.container{
+main{
     max-width: 1500px;
     margin: 0 auto;
 }

@@ -11,20 +11,20 @@ class User{
         if($result->num_rows === 1){
             $row = $result->fetch_assoc();
             if(password_verify($userPassword, $row['UserPassword'])){
-                $_SESSION['SessionValue'] = $row['UserName'];
-                return $_SESSION;
+                $_SESSION['SessionKey'] = $row['UserName'];
+                return $_SESSION['SessionKey'];
             } else {
-                die("<h1>Incorrect credentials</h1>");
+                return false;
             }
-        }
-        }  catch (Exception $error) {
+        }  
+    }catch (Exception $error) {
             die ("Database error: ".$error->getMessage());
         } finally {
             Database::closeConnection();
             }
     }
 }
-// TESTING SQLi, incorrect implementation, cause SQLi
+// TESTING SQLi, incorrect implementation, cause SQLi and XSS
 //     public static function login($userName, $userPassword){
 //         try{
 //         $conn = Database::getConnection();
