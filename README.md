@@ -37,3 +37,6 @@
 - Sony Moore
 - Willem Dafoe
 * The password for all users is `123456789`.
+
+## Results
+    - For this assignment, I scored 87%.
